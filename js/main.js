@@ -63,6 +63,34 @@ $(document).ready(() => {
 
         selectPage($(this).data('select-page'));
     })
+
+    //Выбор города в хедер
+    //Октрытие менюшки
+    $('.js-select-city').on('click', (e) => {
+        e.preventDefault();
+
+        openCloseSelect();
+    })
+    //Выбор города
+    $('.js-select-option').on('click', function(e){
+        e.preventDefault();
+
+        $(this).parent().prev().children('.header__box-link').text($(this).text());
+        openCloseSelect();
+    })
+    //Закрытие этой выборки
+    $(window).on('click', (e) => {
+        if($('.js-select-city').hasClass('active') && !$('.js-select-city').hasClass('time')){
+            if(e.target != document.querySelector('.js-select-box')){
+                document.querySelectorAll('.js-select-box *').forEach((el) => {
+                    if(e.target != el){
+                        $('.js-select-city').removeClass('active');
+                        $('.js-select').removeClass('active');
+                    }
+                })
+            }
+        }
+    })
 })
 
 //Функции
@@ -84,4 +112,15 @@ function selectPage(data){
     $('.js-select-page[data-select-page="'+data+'"]').addClass('active');
     $('.js-page[data-page="'+data+'"]').fadeIn();
     $('.js-page[data-page="'+data+'"]').addClass('active');
+}
+
+//Открытие закрытие меню
+function openCloseSelect(){
+    $('.js-select-city').toggleClass('active');
+    $('.js-select-city').toggleClass('time');
+    $('.js-select').toggleClass('active');
+
+    setTimeout(() => {
+        $('.js-select-city').removeClass('time');
+    }, 500);
 }
