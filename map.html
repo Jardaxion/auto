@@ -54,6 +54,18 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4701 3.48779C19.2152 1.23984 16.2163 0.00131836 13.0215 0C6.43819 0 1.08037 5.33481 1.07772 11.8917C1.07684 13.9878 1.62674 16.0339 2.67198 17.8374L0.977539 24L7.3091 22.3462C9.0537 23.2938 11.0178 23.7932 13.0166 23.7938H13.0216C19.6041 23.7938 24.9625 18.4585 24.965 11.9013C24.9664 8.72344 23.7252 5.7356 21.4701 3.48779ZM13.0215 21.7853H13.0173C11.2361 21.7846 9.48915 21.3079 7.96477 20.4075L7.60244 20.1932L3.84519 21.1746L4.84806 17.527L4.61194 17.153C3.6182 15.5792 3.09345 13.7602 3.09433 11.8925C3.09639 6.44253 7.54977 2.00859 13.0254 2.00859C15.677 2.00947 18.1695 3.03896 20.0437 4.90737C21.9179 6.77578 22.9495 9.25928 22.9486 11.9005C22.9462 17.3509 18.4931 21.7853 13.0215 21.7853ZM18.4667 14.3821C18.1683 14.2333 16.701 13.5146 16.4274 13.4153C16.1541 13.3162 15.9549 13.2668 15.7561 13.5642C15.5571 13.8615 14.9853 14.531 14.8111 14.7292C14.6369 14.9275 14.463 14.9524 14.1645 14.8036C13.866 14.6549 12.9045 14.341 11.7645 13.3286C10.8774 12.5407 10.2786 11.5676 10.1044 11.2702C9.93049 10.9726 10.1029 10.8272 10.2353 10.6638C10.5584 10.2643 10.8819 9.84551 10.9813 9.64732C11.0809 9.44897 11.031 9.27539 10.9563 9.12671C10.8819 8.97803 10.285 7.51538 10.0364 6.92022C9.79397 6.34102 9.54814 6.41924 9.36484 6.41016C9.19095 6.40151 8.99191 6.39976 8.79287 6.39976C8.59397 6.39976 8.27062 6.47402 7.99699 6.77168C7.72351 7.06919 6.95264 7.78799 6.95264 9.25064C6.95264 10.7133 8.022 12.1263 8.17117 12.3246C8.32034 12.523 10.2756 15.5244 13.2692 16.8114C13.9812 17.1179 14.537 17.3005 14.9705 17.4375C15.6855 17.6637 16.3359 17.6317 16.8502 17.5553C17.4236 17.4699 18.6157 16.8363 18.8646 16.1423C19.1132 15.4481 19.1132 14.8532 19.0385 14.7292C18.9641 14.6052 18.765 14.531 18.4667 14.3821Z" fill="#FFFFFF"></path>
               </svg></a>
           </div>
+          <div class="header__menuMobileBtn js-open-mobMenu"><span> </span><span> </span><span></span></div>
+          <div class="header__mobMenu-wrp js-mobMenu">
+            <div class="header__mobMenu">
+              <ul class="header__mobMenu-list">
+                <li class="header__mobMenu-item"><a class="header__mobMenu-link" href="catalog.html">Автомобили</a></li>
+                <li class="header__mobMenu-item"><a class="header__mobMenu-link" href="prem.html">Приемущества</a></li>
+                <li class="header__mobMenu-item"><a class="header__mobMenu-link" href="starch.html">Страховка</a></li>
+                <li class="header__mobMenu-item"><a class="header__mobMenu-link" href="terms.html">Условия</a></li>
+                <li class="header__mobMenu-item"><a class="header__mobMenu-link" href="map.html">Как добраться</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div class="header__bottom">
@@ -134,6 +146,51 @@
       </div>
     </div>
   </footer>
+  <div class="modal__background"></div>
+  <div class="modal" id="rent">
+    <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <form class="modal__form" action="">
+        <p class="modal__form-title">Арендовать автомобиль</p>
+        <input class="modal__input" clas="fio" placeholder="Ваше ФИО">
+        <input class="modal__input" clas="date" placeholder="Дата рождения">
+        <input class="modal__input" clas="diapoz" placeholder="Диапозон аренды">
+        <input class="modal__input" clas="tel" placeholder="Телефон">
+        <input class="modal__input" clas="comm" placeholder="Комментарий к заявке">
+        <p class="modal__subdescription">Отправляя данные, Вы соглашаетесь с пользовательским соглашением</p>
+        <button class="modal__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="request">
+    <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title">Оставь заявку</p>
+      <p class="modal__description">В течении дня мы свяжемся с Вами</p>
+      <form class="modal__form" action="">
+        <input class="modal__input" type="text" placeholder="Ф.И.О">
+        <input class="modal__input" type="text" placeholder="+ 7 (000) 000-00-00">
+        <button class="js-reOpen-modal modal__button" type="submit" data-modal="thanks">Отправить заявку </button>
+      </form>
+      <p class="modal__subdescription">Отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта</p>
+    </div>
+  </div>
+  <div class="modal" id="thanks">
+    <div class="modal__inner center">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title bigMargin">Спасибо что оставили заявку</p>
+      <button class="js-close-modal modal__button" href="#">На главную </button>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
