@@ -2270,6 +2270,10 @@ body.noScroll
 
         text-align: center;
     }
+    .arrow
+    {
+        padding: 8px 17px;
+    }
     .header__bottom
     {
         display: none;
