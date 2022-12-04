@@ -2372,11 +2372,14 @@ body.noScroll
     }
     .slider__item-title
     {
+        font-family: 'GothamPro';
         font-size: 48px;
-        line-height: 60px;
+        font-weight: 500;
+        line-height: 50px;
 
         width: 100%;
         max-width: none;
+        margin-right: 10px;
         margin-bottom: 99px;
     }
     .rent__top
